@@ -54,10 +54,10 @@ a:visited {
 }
 
 img {
-  max-width: 100%;
+  max-width: 45%;
   display: block;
   height: auto;
-  margin: 0 auto;
+  margin: 1rem;
 }
 
 #img-div {
@@ -97,4 +97,9 @@ blockquote {
   max-width: 545px;
   margin: 0 auto 50px auto;
   text-align: left;
+}
+
+.img-container {
+  display: flex;
+  justify-content: center;
 }
