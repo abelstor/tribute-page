@@ -40,7 +40,7 @@ a:visited {
   color: #74638f;
 }
 
-#main {
+#tribute-main {
   margin: 30px 8px;
   padding: 15px;
   border-radius: 5px;
@@ -48,31 +48,44 @@ a:visited {
 }
 
 @media (max-width: 460px) {
-  #main {
+  #tribute-main {
+    margin: 0;
+  }
+}
+
+#tribute-section {
+  border-radius: 5px;
+  background: #eee;
+}
+
+@media (max-width: 460px) {
+  #tribute-section {
     margin: 0;
   }
 }
 
 img {
-  max-width: 45%;
+  max-width: 100%;
   display: block;
   height: auto;
-  margin: 1rem;
 }
 
-#img-div {
+#img-figure {
   background: white;
-  padding: 10px;
+  padding: 2rem;
   margin: 0;
 }
 
-#img-caption {
-  margin: 15px 0 5px 0;
+#img-blockquote {
+  max-width: 545px;
+  margin: 5px 15px 15px;
+  font-style: italic;
+  text-align: left;
 }
 
 @media (max-width: 460px) {
-  #img-caption {
-    font-size: 1.4rem;
+  #img-blockquote {
+    font-size: 1.3rem;
   }
 }
 
@@ -92,14 +105,15 @@ li {
   margin: 16px 0;
 }
 
-blockquote {
-  font-style: italic;
-  max-width: 545px;
-  margin: 0 auto 50px auto;
-  text-align: left;
-}
-
-.img-container {
+#img-container {
+  margin-top: 40px;
   display: flex;
   justify-content: center;
+}
+
+@media (max-width: 768px) {
+  #img-container {
+    flex-direction: column;
+    align-items: center;
+  }
 }
